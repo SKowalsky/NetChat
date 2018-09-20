@@ -1,0 +1,3 @@
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/cmake-build-debug/CMakeFiles/NetChat.dir

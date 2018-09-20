@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/UdpServer.cpp
+UdpServer.h
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/UdpServer.h
+
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/UdpServer.h
+iostream
+-
+netdb.h
+-
+string
+-
+thread
+-
+
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/main.cpp
+iostream
+-
+NetLib/UdpServer.h
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/UdpServer.h
+
