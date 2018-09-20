@@ -19,7 +19,9 @@ void ChatServer::received(const char *msg, ssize_t msglen, struct Connection con
         int number = 2;
         while(clients.find(textcpy) == clients.end()) textcpy = text + std::to_string(number++); //find new name if neccessary
         text = textcpy; //change name to new name
+
         clients[text] = connection; //add client to list
+
         std::string printable_message = text+" connected!";
         sendtoall("/c/"+printable_message+"/e/"); //send connection response
         outstream << printable_message << std::endl;    //print to console
@@ -28,15 +30,18 @@ void ChatServer::received(const char *msg, ssize_t msglen, struct Connection con
 
         std::string name = find_name(connection);   //get name
         if(name.empty()) return;    //should not happen
+
         std::string printable_message = name+" disconnected!";
         sendtoall("/d/"+printable_message+"/e/");    //broadcast disconnection message
         outstream << printable_message << std::endl;    //print to console
+
         clients.erase(name);    //delete client from client list
     } else if(prefix == "/m/") {    //message
         if(!isregistered(connection)) return;   //not registered, ignore
 
         std::string name = find_name(connection);   //get name
         if(name.empty()) return;    //should not happen
+
         std::string printable_message = name+": "+text;
         sendtoall("/m/"+printable_message+"/e/");  //broadcast message
         outstream << printable_message << std::endl;    //print to console

@@ -13,15 +13,14 @@ class ChatServer : public UdpServer {
     std::map<std::string, struct Connection> clients;
 
     std::ostream &outstream;
-    std::istream &instream;
 
     bool isregistered(struct Connection connection);
     std::string find_name(struct Connection connection);
     std::vector<std::string> extract_keys(std::map<std::string, struct Connection> const& input_map);
 
 public:
-    explicit ChatServer(const char* port) : UdpServer(port), outstream(std::cout), instream(std::cin) {}
-    ChatServer(const char* port, size_t buffersize, std::ostream &outstream, std::istream &istream) : UdpServer(port, buffersize), outstream(outstream), instream(instream) {}
+    explicit ChatServer(const char* port) : UdpServer(port), outstream(std::cout) {}
+    ChatServer(const char* port, size_t buffersize, std::ostream &outstream, std::istream &istream) : UdpServer(port, buffersize), outstream(outstream) {}
 
     void sendmessage(std::string message, struct Connection connection);
     void sendtoall(std::string message);

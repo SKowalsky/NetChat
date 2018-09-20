@@ -4,7 +4,7 @@
 
 #include "UdpServer.h"
 
-void* get_in_addr(struct sockaddr *addr) {
+void* UdpServer::get_in_addr(struct sockaddr *addr) {
     if(addr->sa_family == AF_INET) return &(((struct sockaddr_in*)addr)->sin_addr); //ipv4
     return &(((struct sockaddr_in6*)addr)->sin6_addr);  //ipv6
 }

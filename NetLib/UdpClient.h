@@ -23,6 +23,8 @@ protected:
     std::thread recv_thread;
     void trecv();
 
+    void* get_in_addr(struct sockaddr *addr);
+
 public:
     explicit UdpClient(const char* address, const char* port) : address(address), port(port), running(false), conn({}), buffersize(1024) {}
     UdpClient(const char* address, const char* port, size_t buffersize) : address(address), port(port), running(false), conn({}), buffersize(buffersize) {}
