@@ -6,6 +6,42 @@
 
 #IncludeRegexTransform: 
 
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/ChatServer.cpp
+ChatServer.h
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/ChatServer.h
+
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/ChatServer.h
+NetLib/UdpServer.h
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/UdpServer.h
+map
+-
+vector
+-
+
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/Connection.h
+netdb.h
+-
+string
+-
+
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/UdpClient.cpp
+UdpClient.h
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/UdpClient.h
+
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/UdpClient.h
+iostream
+-
+netdb.h
+-
+arpa/inet.h
+-
+string
+-
+thread
+-
+Connection.h
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/Connection.h
+
 /Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/UdpServer.cpp
 UdpServer.h
 /Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/UdpServer.h
@@ -15,14 +51,18 @@ iostream
 -
 netdb.h
 -
+arpa/inet.h
+-
 string
 -
 thread
 -
+Connection.h
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/Connection.h
 
 /Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/main.cpp
 iostream
 -
-NetLib/UdpServer.h
-/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/NetLib/UdpServer.h
+ChatServer.h
+/Users/samuelkowalsky/Documents/Projects/CLionProjects/NetChat/ChatServer.h
 
